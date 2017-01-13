@@ -5,9 +5,19 @@ Build
 
     $ mvn install
 
-Run
+Get your public key
+------ 
+    $ java -jar btc-crypto.jar 
+
+Get encrypted text
 -----
       $ java -jar btc-crypto.jar "recipient_public_key" "message"
+
+Regenerate your public key
+-----
+      $ rm mnemonic 
+      $ java -jar btc-crypto.jar 
+
 
 If you get following exception you:
     

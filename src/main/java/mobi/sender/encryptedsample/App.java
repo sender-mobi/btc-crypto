@@ -10,9 +10,13 @@ public class App{
     }
     public static void main( String[] args ) throws Exception {
         Security.addProvider(new BouncyCastleProvider());
-        LWallet wallet = LWallet.getInstance();
-        System.out.println( "Your public key: " +wallet.getMyRootPubKey());
-        String text = wallet.encrypt(wallet.pubKeyFromString(args[0]), args[1]);
-        System.out.println( "Your encr text: " +text);
+        if (args.length==0){
+            LWallet wallet = LWallet.getInstance();
+            System.out.println( "Your public key: " +wallet.getMyRootPubKey());
+        }else{
+            LWallet wallet = LWallet.getInstance();
+            String text = wallet.encrypt(wallet.pubKeyFromString(args[0]), args[1]);
+            System.out.println( "Your encrypted text: " +text);
+        }
     }
 }
