@@ -9,14 +9,17 @@ Get your public key
 ------ 
     $ java -jar btc-crypto.jar
     
-    Your public key: eQo3RaiwVzjiMgUPZ9rcE36GYHVkXeCoZy8sn7cSctWZ
+    Your public key: vVyKui9osVyjH4HjRJYFa9gNxPvxnh87X9BkFk1zeDGE
 
 
 Get encrypted text
 -----
       $ java -jar btc-crypto.jar "recipient_public_key" "message"
       
-      Your encr text: JEAJHELy8i4uLVhUYXSnKi9jCoxdenpdu6yW1VHjeMtdFett1
+      Example:
+      $ java -jar btc-crypto.jar "ipkDWsv5oeK2pLDoPkqay8KxtmjuTmXRkevTBc1Ds4Cp" "hello world"
+      
+      Your encr text: 2hww3nTCkXGX1ThdwJuEK4QXU4YvdWCoLgLAKQ8bnoedRbyxHG
 
 
 Regenerate your public key
